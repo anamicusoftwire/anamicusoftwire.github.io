@@ -1,3 +1,4 @@
+<body>
 <h3> A list of programming languages I would like to learn </h3>
 <ul>
     <li>C#</li>
@@ -33,4 +34,24 @@ that since peanut butter is so rich in carbon, it is possible to turn it into di
 
 <h3>A picture of myself</h3>
 <img src="images/profil.jpeg" alt="Ana-Maria Micu">
+
+<br>
+
+<button>Click me!</button>
+
+<script>
+    function createParagraph() {
+        var para = document.createElement('p');
+        para.textContent = 'You clicked the button!';
+        document.body.appendChild(para);
+    }
+
+    var buttons = document.querySelectorAll('button');
+
+    for (var i = 0; i < buttons.length ; i++) {
+        buttons[i].addEventListener('click', createParagraph);
+    }
+</script>
+
+</body>
 
